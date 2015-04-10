@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ondocme</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+
+	<!--[if IE 7]>
+    <link rel='stylesheet' type='text/css' href="css/ie7.css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel='stylesheet' type='text/css' href="css/ie8.css"/>
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel='stylesheet' type='text/css' href="css/ie9.css"/>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.ui.timepicker.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="js/libs/plupload.full.min.js"></script>
+    <script type="text/javascript" src="js/vars.js"></script>
+	
+    <script type="text/javascript" src="js/app.settings.js"></script>
+    <script type="text/javascript" src="js/app.events.js"></script>
+	
+    <script type="text/javascript" src="js/app.addlines.js"></script>
+    <script type="text/javascript" src="js/app.carousel.js"></script>
+    <script type="text/javascript" src="js/app.checkboxgroup.js"></script>
+    <script type="text/javascript" src="js/app.form.js"></script>
+    <script type="text/javascript" src="js/app.select.js"></script>
+    <script type="text/javascript" src="js/app.uploaddocs.js"></script>
+    <script type="text/javascript" src="js/app.popup.js"></script>
+</head>
+
+<body>
+	<div id="demo" class="b-popup-template">
+		<figure class="b-demo-picture">
+			<img src="i/tmp/demo.jpg" alt="" />
+		</figure>
+	</div>
+	<div id="reg-success" class="b-popup-template">
+		<div class="b-reg-success">
+			<i class="b-icon b-daw-success"></i>
+			<h2>Регистрация прошла успешно!</h2>
+			Мы оповестим вас по электронной почте, <br />когда личный кабинет станет доступен!
+		</div>
+	</div>
+	
+	<div class="b-popup">
+		<div class="b-popup-content">
+			<div class="b-popup-content-inner">
+				
+			</div>
+			<div class="b-buttons">
+				<span class="b-button b-popup-close"><i class="b-icon b-cross"></i>Закрыть</span>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="b-toUp">Наверх</a>
+	<div class="b-top">
+		<div class="b-wrapper">
+			<ul class="b-top-menu b-cols">
+				<li class="b-top-menu-item"><a href="#">Санкт-Петербург</a></li>
+				<li class="b-top-menu-item"><a href="#">Врачам и клиникам</a></li>
+				<li class="b-enter">
+					<a href="#"class="handler">Вход/Регистрация</a>
+					
+					<div class="b-sub-menu b-enter-form">
+						<form class="b-auth">
+							<span class="b-input-box"><input type="text" value="" placeholder="логин" /></span>
+							<span class="b-input-box"><input type="password" value="" placeholder="Пароль" /></span>
+							<div class="b-buttons">
+								<a href="#">Зарегистрироваться</a>
+								<input type="submit" value="Вход" />
+							</div>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<header class="b-header">
+		<div class="b-wrapper">
+			<a href="/" class="b-logo b-logo-full b-logo-svg"></a>
+			
+			<ul class="b-header-menu">
+				<li><a href="#">Возможности</a></li>
+				<li><a href="#">Приложение для iPad </a></li>
+				<li><a href="#">Правовая информация</a></li>
+				<li><span class="b-button js-demo-access">демо-доступ</span></li>
+			</ul>
+		</div>
+	</header>
+	<div class="b-allocate">
+		<div class="b-wrapper">
+			<div class="b-carousel">
+				<a class="b-buttona b-buttona-light b-button-appStore" href="#"></a>
+				<a class="b-buttona b-buttona-light b-button-createPC" href="#">
+					<i class="b-icon b-pc"></i>Создайте<br />личный кабинет
+				</a>
+				<ul>
+					<li class="b-carousel-slide">
+						<div class="b-name"><span>Проживите долгую</span><br /><span>полноценную жизнь</span></div>
+					</li>
+					<li class="b-carousel-slide">
+						<div class="b-name"><span>Снизьте риск</span><br /><span>возникновения</span><br /><span>заболеваний</span></div>
+					</li>
+					<li class="b-carousel-slide">
+						<div class="b-name"><span>Получите</span><br /><span>квалифицированную</span><br /><span>поддержку</span></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="b-content">
+		<div class="b-healthKey b-wrapper">
+			<h2>Ключ к вашему здоровью</h2>
+			<div class="b-cols">
+				<div class="l-col">
+					<p>Продолжительность вашей жизни напрямую зависит от качества медицинского обслуживания, доступа к достоверной информации о своем здоровье, своевременной диагностики и принятия профилактических мер.</p>
+					<p>Мы предлагаем вам целый комплекс инструментов и сервисов, который поможет вам правильно и легко заботиться о состоянии своего здоровья на протяжении всей жизни.</p>
+				</div>
+				<div class="r-col">
+					<ul>
+						<li><span class="ls">&bull;</span>Профессиональный мониторинг состояния здоровья</li>
+						<li><span class="ls">&bull;</span>Персональные рекомендации</li>
+						<li><span class="ls">&bull;</span>Оценка риска возникновения заболевания</li>
+						<li><span class="ls">&bull;</span>Перевод врачебных записей в цифровой вид</li>
+						<li><span class="ls">&bull;</span>Электронная медицинская карта и дневник здоровья</li>
+						<li><span class="ls">&bull;</span>Актуальная база врачей и клиник</li>
+						<li><span class="ls">&bull;</span>Предоставление доступа к своей истории лечащему врачу</li>
+						<li><span class="ls">&bull;</span>Удаленные консультации с лучшими специалистами</li>
+						<li><span class="ls">&bull;</span>Запись на прием к врачу</li>
+					</ul>
+				</div>
+			</div>
+			<div class="b-buttons">
+				<a href="#" class="b-button-link">Начать пользоваться сейчас</a>
+			</div>
+		</div>
+		<div class="b-allocate b-healthControl">
+			<div class="b-wrapper b-cols">
+				<div class="l-col">
+					<h2>Контроль за состоянием здоровья</h2>
+					<p>
+						OnDoc объединяет все ваши медицинские данные в персональный профиль и демонстрирует вам состояние вашего здоровья на сегодняшний день, а также делает прогноз на будущее.<br />
+						Мы определяем факторы риска, которые могут привести к заболеванию или снижению продолжительности жизни, рассказываем вам как снизить их влияние и какие шаги следует предпринять для улучшения здоровья.
+					</p>
+				</div>
+				<div class="r-col">
+					<figure class="b-pic">
+						<img src="i/ipad-graphs.png" alt="" />
+					</figure>
+				</div>
+			</div>
+		</div>
+		<div class="b-comfort b-wrapper">
+			<div class="b-cols">
+				<div class="l-col">
+					<h2>История вашего здоровья</h2>
+					<h3>Ваши медицинские данные всегда у вас под рукой.</h3>
+					<p>Легко сохраняйте любые медицинские записи в электронном виде и получайте к ним доступ в любое время с любого устройства.</p>
+				</div>
+				<div class="l-col">
+					<h2>Центр обработки документов</h2>
+					<h3>Сделайте записи врачей понятными для вас и ваших консультантов.</h3>
+					<p style="font-weight: normal;">Наши операторы быстро оцифруют и сохранят в вашу медицинскую карту присланный вами документ, даже если запись была сделана врачебным почерком.</p>
+				</div>
+				<div class="r-col">
+					<h2>Быстрый поиск информации</h2>
+					<h3>Находите любые данные за любой период вашей жизни.</h3>
+					<p style="font-weight: normal; font-family: arial;">За несколько секунд вы сможете информацию о назначенных препаратах, рекомендациях лечащих врачей, перенесенных заболеваниях, посмотреть сводные данные о своем здоровье.</p>
+				</div>
+			</div>
+			<figure class="b-pic">
+				<img src="i/service.png" alt="" />
+			</figure>
+		</div>
+		<div class="b-safety b-allocate">
+			<div class="b-wrapper b-cols">
+				<div class="l-col">
+					<h2>Получайте эффективное лечение</h2>
+					<h3>Доступ лечащего врача к полной истории здоровья, позволяет принять верное решение и назначить эффективное лечение</h3>
+					<p>В случае необходимости проведения консультаций или обследований, просто предоставляйте доступ к нужной части своей медицинской истории доверенным специалистам – это позволит максимально точно поставить диагноз и предложить вам эффективные методики для поддержания и укрепления здоровья.</p>
+				</div>
+				<div class="r-col">
+					<h2>Снижайте риск врачебных ошибок</h2>
+					<h3>Врач будет знать какой метод лечения подходит именно вам, а какой противопоказан.</h3>
+					<p>Введите записи о сделанных прививках, возможных аллергических реакциях, перенесенных или хронических заболеваниях, группе крови, образе жизни и других индивидуальных особенностях, чтобы в случае необходимости, ваш врач мог подобрать лечение подходящее именно вам.</p>
+				</div>
+			</div>
+		</div>
+		<div class="b-service b-wrapper">
+			<div class="b-cols">
+				<div class="l-col">
+					<h2>Ваш врач всегда рядом</h2>
+					<figure class="b-pic">
+						<img src="i/doctor.png" alt="" />
+					</figure>
+					<p>
+						Мы не только позволяем вам хранить данных о ваших врачах и клиниках, но также и поддерживаем актуальность информации.<br />
+						Если у медицинского учреждения изменился телефон, а врач перешел работать в другую клинику – данные в нашей базе данных также будут актуализированы. Вы всегда сможете связаться с нужным вам специалистом.
+					</p>
+				</div>
+				<div class="l-col">
+					<h2>Медицинский дневник</h2>
+					<figure class="b-pic">
+						<img src="i/meddaily.png" alt="" />
+					</figure>
+					<p>Вносите данные о своем давлении, пульсе, уровне сахара, весе и другие важные для вас показатели, чтобы отслеживать динамику и предоставлять достоверную информацию своему врачу.</p>
+					<p>Если вы все-таки заболели, вносите информацию о ходе болезни, записывайте свое состояние и симптомы, чтобы предоставить врачу.</p>
+				</div>
+				<div class="r-col">
+					<h2>Напоминания</h2>
+					<figure class="b-pic">
+						<img src="i/reminder.png" alt="" />
+					</figure>
+					<p>
+						OnDoc  напомнит вам о необходимости приема препарата в нужное время. Данные о препаратах принимаемых вами сейчас и напоминания загружаются автоматически. Также, создавайте напоминания и корректируйте прием препарата самостоятельно!<br />
+						OnDoc  также напомнит о записи на прием к врачу или необходимости повторной консультации.
+					</p>
+				</div>
+			</div>
+			
+			<div class="b-buttons">
+				<a href="#" class="b-button-link js-demo-access">Посмотрите Демо-версию</a>
+			</div>
+			<div class="b-buttons">
+				<a href="#" class="b-buttona b-buttona-medium b-button-appStore"></a>
+			</div>
+		</div>
+		<div class="b-start b-allocate">
+			<div class="b-wrapper b-cols">
+				<div class="l-col">
+					<h2>Поддержка и консультация</h2>
+					<h3>Советуйтесь и получайте решения быстро</h3>
+					<p>Возможности OnDoc позволяют вам после приема у врача задать ему уточняющий вопрос  и сообщить о ходе лечения.</p>
+					<p>Также, в OnDoc работают квалифицированные врачи, которые могут ответить на медицинский вопрос и оказать поддержку в любое время суток в формате чат-консультации или по телефону горячей линии.</p>
+				</div>
+				<div class="r-col b-req">
+					<h2>Регистрация</h2>
+					<form id="js-req-form" class="js-form" action="/ajax/register_user" data-ajax="1" data-formname="reg-form">
+						<fieldset class="b-field">
+							<span class="b-input-box">
+								<input type="text" placeholder="Ваше имя" name="name" value="" />
+							</span>
+						</fieldset>
+						<fieldset class="b-field b-error">
+							<span class="b-input-box b-error">
+								<input type="text" placeholder="Фамилия" name="surname" value="" />
+								<span class="b-error-hint">
+									Неверно ай-ай-ай
+								</span>
+							</span>
+						</fieldset>
+						<fieldset class="b-field">
+							<span class="b-input-box b-error b-error-empty">
+								<input type="text" placeholder="Укажите свой e-mail" name="email" value="" />
+							</span>
+						</fieldset>
+						<fieldset class="b-field">
+							<span class="b-input-box">
+								<input type="password" placeholder="Введите новый пароль" name="password" value="" />
+							</span>
+						</fieldset>
+						<div class="b-attention">* Все поля обязательны для заполнения</div>
+						<div class="b-buttons">
+							<input class="b-button" type="submit" value="Создать личный кабинет" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="b-nda b-wrapper">
+			<div class="b-cols">
+				<div class="l-col">
+					<h2>Безопасность</h2>
+					<h3>Мы гарантируем полную конфиденциальность данных.</h3>
+					<p>Все данные хранятся на надежных серверах, доступ к личной информации ограничен правами доступа. Наши сотрудники, которые производят обработку данных – не имеют доступа к вашему профилю и медицинским данным, сверх предоставленных к обработке. </p>
+					<p>Полученная инфомация не предоставляется третьим лицам в соотвествии с законом о защите персональных данных.</p>
+					<p><a href="#">Политика Конфеденциальности</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-allocate b-test">
+		<div class="b-wrapper">
+			<p>
+				*Часть указанных сервисов OnDoc работают в тестовом режиме, и временно доступна органиченному числу пользователей.<br>
+				Доступ ко всем возможностям будет доступен после окончания тестирования.
+			</p>
+		</div>
+	</div>
+	<footer class="b-footer">
+		<div class="b-wrapper">
+			<h2>OnDoc.me – Ваш ключ к долгой и здоровой жизни</h2>
+			<ul class="b-footer-menu">
+				<li><a href="#">О КОМПАНИИ</a></li>
+				<li><a href="#">ВРАЧАМ И КЛИНИКАМ</a></li>
+				<li><a href="#">Партнерам</a></li>
+				<li><a href="#">КОНТАКТЫ</a></li>
+				<li><a href="#">ТАРИФЫ</a></li>
+				<li><a href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a></li>
+			</ul>
+		</div>
+		<div class="b-bottom">
+			OnDoc.me - система персонального здравоохранения. &copy; 2014
+		</div>
+	</footer>
+</body>
+</html>

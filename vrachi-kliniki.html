@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ondocme</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+
+	<!--[if IE 7]>
+    <link rel='stylesheet' type='text/css' href="css/ie7.css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel='stylesheet' type='text/css' href="css/ie8.css"/>
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel='stylesheet' type='text/css' href="css/ie9.css"/>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.ui.timepicker.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="js/libs/plupload.full.min.js"></script>
+    <script type="text/javascript" src="js/vars.js"></script>
+	
+    <script type="text/javascript" src="js/app.settings.js"></script>
+    <script type="text/javascript" src="js/app.events.js"></script>
+	
+    <script type="text/javascript" src="js/app.addlines.js"></script>
+    <script type="text/javascript" src="js/app.carousel.js"></script>
+    <script type="text/javascript" src="js/app.checkboxgroup.js"></script>
+    <script type="text/javascript" src="js/app.form.js"></script>
+    <script type="text/javascript" src="js/app.select.js"></script>
+    <script type="text/javascript" src="js/app.uploaddocs.js"></script>
+    <script type="text/javascript" src="js/app.popup.js"></script>
+</head>
+
+<body>
+	<div id="demo" class="b-popup-template">
+		<figure class="b-demo-picture">
+			<img src="i/tmp/demo.jpg" alt="" />
+		</figure>
+	</div>
+	<div id="reg-success" class="b-popup-template">
+		<div class="b-reg-success">
+			<i class="b-icon b-daw-success"></i>
+			<h2>Регистрация прошла успешно!</h2>
+			Мы оповестим вас по электронной почте, <br />когда личный кабинет станет доступен!
+		</div>
+	</div>
+	
+	<div class="b-popup">
+		<div class="b-popup-content">
+			<div class="b-popup-content-inner">
+				
+			</div>
+			<div class="b-buttons">
+				<span class="b-button b-popup-close"><i class="b-icon b-cross"></i>Закрыть</span>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="b-toUp">Наверх</a>
+	<div class="b-top">
+		<div class="b-wrapper">
+			<ul class="b-top-menu b-cols">
+				<li class="b-top-menu-item"><a href="#">Санкт-Петербург</a></li>
+				<li class="b-top-menu-item"><a href="#">Врачам и клиникам</a></li>
+				<li class="b-enter">
+					<a href="#"class="handler">Вход/Регистрация</a>
+					
+					<div class="b-sub-menu b-enter-form">
+						<form class="b-auth">
+							<span class="b-input-box"><input type="text" value="" placeholder="логин" /></span>
+							<span class="b-input-box"><input type="password" value="" placeholder="Пароль" /></span>
+							<div class="b-buttons">
+								<a href="#">Зарегистрироваться</a>
+								<input type="submit" value="Вход" />
+							</div>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<header class="b-header">
+		<div class="b-wrapper">
+			<a href="/" class="b-logo b-logo-full b-logo-svg"></a>
+			
+			<ul class="b-header-menu">
+				<li><a href="#">Возможности</a></li>
+				<li><a href="#">Приложение для iPad </a></li>
+				<li><a href="#">Правовая информация</a></li>
+				<li><span class="b-button js-demo-access">демо-доступ</span></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="b-content">
+
+		<div class="b-doc-registration">
+			<h2>Находите новых клиентов. </br>Поддерживайте контакт с пациентами.</h2>
+			<div class="b-buttons">
+				<a href="#" class="b-button-feedback">Позвоните в OnDoc</br>8-800-777-77-77</a>
+			</div>
+
+			
+			<div class="b-healthKey b-wrapper">
+				<div class="b-cols">
+
+					<div class="l-col">
+						<div class="b-free-access">
+							<p>Специалистам:</p>
+							<ul>
+								<li><span class="ls">&bull;</span>Получите доступ к истории здоровья своего клиента</li>
+								<li><span class="ls">&bull;</span>Исключите возможные риски при лечении</li>
+								<li><span class="ls">&bull;</span>Получите подробный анамнез за 1 минуту</li>
+								<li><span class="ls">&bull;</span>Назначайте повторный прием - мы напомним</li>
+								<li><span class="ls">&bull;</span>Поддреживайте актуальность информации о себе</li>
+								<li><span class="ls">&bull;</span>Формируйте базу лояльных клиентов</li>
+							</ul>
+							<h3>Получите бесплатный доступ к OnDoc сегодня.</h3>
+						</div>
+					</div>
+
+					<div class="r-col b-req">
+						<div class="b-free-access">
+							<h2>Регистрация врачей и клиник</h2>
+							<form id="js-req-form" class="js-form" action="/ajax/register_user" data-ajax="1" data-formname="reg-doc-form">
+								<fieldset class="b-field">
+									<span class="b-input-box">
+										<input type="text" placeholder="Имя и фамилия" name="last-name" value="" />
+									</span>
+								</fieldset>
+								<fieldset class="b-field">
+									<span class="b-input-box">
+										<input type="text" placeholder="Контактный телефон" name="contact-phone" value="" />
+									</span>
+								</fieldset>
+								<fieldset class="b-field">
+									<span class="b-input-box">
+										<input type="text" placeholder="Название клиники" name="clinic-name" value="" />
+									</span>
+								</fieldset>
+								<fieldset class="b-field">
+									<span class="b-input-box">
+										<input type="password" placeholder="Контактный e-mail адрес" name="password" value="" />
+									</span>
+								</fieldset>
+
+								<fieldset class="b-field">
+									<select class="b-select-box">
+										<option hidden>Выберите тип регистрации</option>
+										<option>Персональная заявка в качестве мед. специалиста</option>
+										<option>Заявка от медицинского учреждения</option>
+									</select>
+								</fieldset>
+
+								<form class="b-settings-form check-form" data-ajax="1">
+									<fieldset class="b-field">
+										<label><input type="checkbox" value="" />Я прочел и принимаю <span>условия оферты</span></label>
+									</fieldset>
+								</form>
+
+								<div class="b-buttons">
+									<input class="b-button" type="submit" value="Регистрация" />
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>	
+			</div>
+		</div>
+
+		<div class="b-healthKey b-wrapper">
+			<div class="b-clients-search">
+					<h2>Клиенты всегда найдут вас с помощью OnDoc</h2>
+					<div class="b-cols">
+							<p>За 1 минуту из своего личного кабинета вы можете сообщить</br> о смене адреса или телефона, запуске новой услуги, а также начать рекламную компанию,</br> которую увидят именно те, кто ищет данную медицинскую услугу в этот момент.</p>
+							<p>Кроме того, вы сможете связаться с клиентами, которые были у вас давно, чтобы предложить</br> пройти повторное обследование и предупредить заболевание.</p>
+					</div>
+					<div class="b-offer">
+						<div class="b-cols">		
+								<i class="b-icon b-offer-favicon"></i>
+							<div class="b-offer-block">
+								<p>Пройдите регулярный профилактический</br> осмотр у вашего кардиолога всего за 500 руб.</p>
+								<p>ПРЕДЛОЖЕНИЕ ДЕЙСТВУЕТ ДО 31 МАЯ</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="b-buttons">
+						<a href="#" class="b-button-registration"><p>Записаться на прием</p></a>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+
+
+		<div class="b-doc-registration">
+			<div class="medical-records">
+				<div class="b-healthKey b-wrapper">
+					<div class="b-cols">
+
+						<div class="l-col">
+							<div class="b-free-access">
+								<h2>Моментальная передача </br>результатов пациенту</h2>
+								<p>
+								Просто отсканируйте или отправьте другой электронный</br> документ в медицинскую карту клинента OnDoc.</br> Наши операторы переведут рукописную запись в</br> цифровой вид, создадут напоминание о следующем приеме</br> и назначенном лечении, указав вашу клинику и лечащего</br> врача.
+								</p>
+							</div>
+						</div>
+
+						<div class="r-col b-req">
+							<div class="b-free-access">
+								<h2>Доступ к медицинской карте и истории здоровья</h2>
+								<p>
+								С разрешения клиента, лечащий врач получает доступ к</br> профилю клиента на OnDoc.</br> Найдите интересующую вас информацию о предыдущих</br> обследованиях, принимаемых препаратах, особенностях пациента,</br> чтобы поставить диагноз точно</br> и быстро назначить лечение.
+								</p>
+							</div>
+						</div>
+
+					</div>	
+				</div>
+			</div>
+		</div>
+
+
+		<div class="doc-info">
+			<div class="b-healthKey b-wrapper">
+				<div class="b-cols">
+
+					<div class="l-col">
+						<img class="lock" src="i/lock.png">
+						<h2>Защита персональной информации</h2>
+						<p>Все данные, которые вы храните в OnDoc и отправляете</br> клиенту надежно защищены</p>
+						<p>База данных хранится на безопасных удаленных</br> серверах, а информация передается по защищенному</br> соединению.</p>
+					</div>
+
+					<div class="r-col">
+						<img class="phone" src="i/phone.png">
+						<h2>Оперативная поддержка <pre> </pre></h2>
+						<p>В любой момент вы можете обратиться с вопросом к</br> специалистам OnDoc</p>
+						<p>Наши операторы будут рады вам помочь и провести </br> консультацию.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	
+		<div class="b-connection">
+			<div class="b-safety b-allocate">
+				<div class="b-wrapper b-cols">
+					<img src="i/time.png">
+					<h2>Получение за 24 часа</h2>
+					<p>После подачи заявки на подключение и проверки</br> достоверности указанной информации, мы в течении 24</br> часов подключим вас к OnDoc. </p>
+					<p>Для работы с OnDoc нужен только браузер, никаких</br> дополнительных программ не требуется.</p>
+					<a href="#" class="b-button-registr">Регистрация</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer class="b-footer">
+		<div class="b-wrapper">
+			<h2>OnDoc.me – Ваш ключ к долгой и здоровой жизни</h2>
+			<ul class="b-footer-menu">
+				<li><a href="#">О КОМПАНИИ</a></li>
+				<li><a href="#">ВРАЧАМ И КЛИНИКАМ</a></li>
+				<li><a href="#">Партнерам</a></li>
+				<li><a href="#">КОНТАКТЫ</a></li>
+				<li><a href="#">ТАРИФЫ</a></li>
+				<li><a href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a></li>
+			</ul>
+		</div>
+		<div class="b-bottom">
+		OnDoc.me - система персонального здравоохранения. &copy; 2014
+		</div>
+	</footer>
+</body>
+</html>
